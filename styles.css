@@ -16,7 +16,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: lightblue;
+    background-color: #f1f7ed;
 }
 
 /* NAVBAR */
@@ -112,8 +112,8 @@ body {
     border: 3px solid transparent;
     border-radius: 24px;
     background:
-        linear-gradient(lightblue) padding-box,
-        linear-gradient(to bottom, #7CA982, #243E36 40%, transparent 90%) border-box;
+        linear-gradient(#f1f7ed) padding-box,
+        linear-gradient(to bottom, #7CA982, #c2a83e 40%, transparent 90%) border-box;
 }
 
 
