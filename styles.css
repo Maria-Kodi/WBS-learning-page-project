@@ -106,6 +106,7 @@ body {
   font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 800;
   margin-top: 30px;
+  margin-bottom: clamp(15px, 3vw, 30px);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
@@ -252,7 +253,8 @@ footer .social-icons a img:hover {
       max-width: 90%;
   }
   .hero h1 {
-      font-size: clamp(1.5rem, 6vw, 2rem);
-      margin-top: 20px;
+      font-size: clamp(1.5rem, 8vw, 2.5rem);
+      margin-top: 10px;
+      margin-bottom: 15px;
   }
 }
