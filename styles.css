@@ -32,9 +32,6 @@ h1 {
     margin: 0 auto;
 }
 
-.bg-light {
-    background-color: var(--bg-light);
-}
 
 .feature {
     display: grid;
@@ -94,18 +91,6 @@ h1 {
     box-shadow: 0 15px 40px rgba(0, 102, 255, 0.15);
 }
 
-/* App Section */
-.app-section {
-    background: #f0f7ff;
-    text-align: center;
-    padding: 110px 5% 100px;
-}
-
-.app-section h2 {
-    font-size: clamp(2.2rem, 5.5vw, 2.8rem);
-    margin-bottom: 1.2rem;
-    line-height: 1.15;
-}
 
 
 /* Extra small devices (phones, 600px and down) */
