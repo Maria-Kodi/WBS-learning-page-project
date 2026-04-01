@@ -46,7 +46,7 @@
   
   /* HERO */
   .hero {
-    background-image: url("photo.jpg");
+    background-image: url("images/photo.jpg");
     background-size: cover; 
     background-position: center;
     height: 100vh;
