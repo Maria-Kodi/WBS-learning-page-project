@@ -5,10 +5,9 @@
 }
 
 .divider {
-    width: 100%;
-    max-width: 1200px;
-    margin: 80px auto;
-    height: 5px;
+    width: 90%;
+    margin: 10px auto;
+    height: 3px;
     background: linear-gradient(to right, transparent, #e0e0e0, transparent);
     position: relative;
 }
@@ -108,6 +107,16 @@ body {
     margin: 0 auto;
 }
 
+.feature-box {
+    padding: 20px;
+    border: 3px solid transparent;
+    border-radius: 24px;
+    background:
+        linear-gradient(lightblue) padding-box,
+        linear-gradient(to bottom, #7CA982, #243E36 40%, transparent 90%) border-box;
+}
+
+
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,9 +124,9 @@ body {
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-    border: 1px solid gray;
+    /*border: 3px solid #ffffff;
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;*/
 }
 
 .feature.reverse {
