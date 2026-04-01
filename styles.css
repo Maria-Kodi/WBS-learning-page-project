@@ -19,6 +19,10 @@
     top: 0;
     left: 0;
     z-index: 100;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .navbar ul {
@@ -36,7 +40,7 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 0px;
+    padding: 20px 0px;
     display: inline-block;
   }
   
@@ -44,6 +48,37 @@
     color: rgb(9, 39, 98);    
   }
   
+  .nav-left {
+    display: flex; 
+    gap: 20px;
+}
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 20px;
+  }
+
+.contact-links a {
+  font-size: 13px;
+  color: #e6f2e6;
+  opacity: 0.8;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.contact-links a:hover {
+  opacity: 1;
+  color: white;
+}
+
+.contact-links ul { 
+  gap: 3px;
+  margin: 0;
+  padding: 0;
+}
+
   /* HERO */
   .hero {
     background-image: url("images/photo.jpg");
@@ -106,15 +141,38 @@
     font-size: 1.15rem;
   }
   
+  footer .social-icons img{
+  width: 25px;  
+  height: 25px;
+  margin: 0 10px;
+  vertical-align: middle;
+
+  }
+
   /* FOOTER */
   footer {
     text-align: center;
     border-top: 1px solid #444;
-    padding: 15px 0;
-    font-size: 14px;
+    padding: 20px 0;
+    font-size: 16px;
     background-color: #243E36;
     color: white; 
     width: 100%;
+  }
+  footer .footer-content {
+  display: flex;  
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  footer .social-icons a img:hover {
+  transform: scale(1.2); 
+  opacity: 0.8; 
+  cursor: pointer;   
   }
   
   /* MEDIA QUERIES */
@@ -127,3 +185,49 @@
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 600px) {
+    .contact-links {
+      position: static;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .nav-left {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact-links {
+      position: static;
+      transform: none;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .nav-left {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-left a {
+      font-size: 16px;
+    }
+  
+    .contact-links a {
+      font-size: 12px;
+    }
+    .hero p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+    .hero h1 {
+      font-size: clamp(1.5rem, 6vw, 2rem);
+      margin-top: 20px;
+    }
+  }
+  
