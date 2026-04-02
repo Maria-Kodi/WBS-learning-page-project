@@ -107,7 +107,7 @@ body {
   font-weight: 800;
   margin-top: 30px;
   margin-bottom: clamp(15px, 3vw, 30px);
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -115,7 +115,7 @@ body {
   line-height: 1.6;
   max-width: 600px;
   color: white;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .feature-image {
@@ -150,6 +150,7 @@ body {
   justify-content: center;
   font-size: 135px;
   box-shadow: 0 15px 40px rgba(0, 102, 255, 0.15);
+  flex-shrink: 0;
 }
 
 .feature-section {
@@ -159,12 +160,16 @@ body {
 }
 
 .feature-box {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 40px;
   border: 3px solid transparent;
   border-radius: 24px;
   background:
-      linear-gradient(#f1f7ed) padding-box,
-      linear-gradient(to bottom, #7CA982, #c2a83e 40%, transparent 90%) border-box;
+    linear-gradient(#f1f7ed) padding-box,
+    linear-gradient(to bottom, #7CA982, #c2a83e 40%, transparent 90%) border-box;
 }
 
 .feature {
@@ -194,6 +199,8 @@ body {
 
 .feature-text p {
   font-size: 1.15rem;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 footer {
@@ -229,67 +236,74 @@ footer .social-icons a img:hover {
 }
 
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     align-items: center;
   }
+
   .contact-links {
-      position: static;
-      transform: none;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0;
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
   }
+
   .nav-left {
-      margin: 0;
-      flex-wrap: wrap;
-      justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .nav-left a {
-      font-size: 16px;
+    font-size: 16px;
   }
+
   .contact-links a {
-      font-size: 12px;
+    font-size: 12px;
   }
+
   .hero p {
-      font-size: 1rem;
-      max-width: 90%;
+    font-size: 1rem;
+    max-width: 90%;
   }
+
   .hero h1 {
-      font-size: clamp(1.5rem, 8vw, 2.5rem);
-      margin-top: 10px;
-      margin-bottom: 15px;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 
 @media (max-width: 600px) {
-    .navbar {
-      padding: 5px 10px;
-    }
-    .navbar a {
-      font-size: 14px;
-      padding: 10px 0;
-    }
-    .nav-left {
-      gap: 10px;
-    }
-    .contact-links {
-      right: 10px;
-      font-size: 11px;
-    }
-    .contact-links a {
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      gap: 2px;
-    }
-    .navbar li {
-      margin: 0 10px;
-    }
-    
+  .navbar {
+    padding: 5px 10px;
+  }
 
+  .navbar a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+
+  .contact-links {
+    right: 10px;
+    font-size: 11px;
+  }
+
+  .contact-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .navbar li {
+    margin: 0 10px;
+  }
 }
