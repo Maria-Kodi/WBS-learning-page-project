@@ -26,9 +26,9 @@ body {
   left: 0;
   z-index: 100;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 
 .navbar ul {
@@ -236,14 +236,22 @@ footer .social-icons a img:hover {
 }
 
 @media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-links {
     position: static;
+    transform: none;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
+    margin: 0;
   }
 
   .nav-left {
+    margin: 0;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -268,4 +276,29 @@ footer .social-icons a img:hover {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+
+  .contact-links {
+    right: 10px;
+    font-size: 11px;
+  }
+
+  .navbar li {
+    margin: 0 10px;
+  }
+
 }
