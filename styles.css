@@ -265,3 +265,24 @@ footer .social-icons a img:hover {
       margin-bottom: 15px;
   }
 }
+
+@media (max-width: 600px) {
+    .navbar {
+      padding: 5px 10px;
+    }
+    .navbar a {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+    .nav-left {
+      gap: 10px;
+    }
+    .contact-links {
+      right: 10px;
+      font-size: 11px;
+    }
+    .navbar li {
+      margin: 0 10px;
+    }
+
+}
